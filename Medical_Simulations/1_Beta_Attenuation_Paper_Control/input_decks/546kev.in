@@ -1,0 +1,21 @@
+TITLE  Gamma 546keV attenuation in cellulose
+       .
+GSTART >>>>>>>>
+LAYER  0.0  0.15                                         [Z_lower and Z_higher]
+CYLIND 1 0.0 10.0                                  [raggio 1 cm]
+GEND   <<<<<<<<
+       .
+       >>>>>>>> Source definition.
+SKPAR  2                                          [photons]
+SENERG 546e3
+SGPOL  0 0 0                                      [non polarised]
+SPOSIT 0 0 -0.05                                  [sorgente prima della lastra]
+SCONE  0 0 180                                      [fascio parallelo +z]
+       .
+       >>>>>>>> Material data and simulation parameters.
+MFNAME Cellulose.mat
+MSIMPA 1e4 1e4 1e4 1.0 1.0 1e3 1e3                [FAST + corretto]
+       .
+       >>>>>>>> Job properties.
+NSIMSH 10e7                                      [statistica iniziale]
+TIME   3600                                        [10 minuti max]

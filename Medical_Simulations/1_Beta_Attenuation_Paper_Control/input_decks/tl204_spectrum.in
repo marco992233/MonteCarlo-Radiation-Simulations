@@ -1,0 +1,106 @@
+TITLE  Simulazione Tl-204 su carta cellulosa 0.01cm.
+        .
+GSTART >>>>>>>> Beginning of the geometry definition list.
+LAYER  0.0  0.13                                         [Z_lower and Z_higher]
+CYLIND 1 0.0 10.0                            [Material, R_inner and R_outer]
+GEND   <<<<<<<< End of the geometry definition list.
+        .
+        >>>>>>>> Source definition.
+SKPAR  1         [Primary particles: 1=electron, 2=photon, 3=positron]
+        .
+        Energy spectrum of beta rays from 204-Tl...
+SPECTR 0.0 2.80882e-03
+SPECTR 10000.0 2.76959e-03
+SPECTR 20000.0 2.72917e-03
+SPECTR 30000.0 2.68768e-03
+SPECTR 40000.0 2.64527e-03
+SPECTR 50000.0 2.60211e-03
+SPECTR 60000.0 2.55837e-03
+SPECTR 70000.0 2.51418e-03
+SPECTR 80000.0 2.46967e-03
+SPECTR 90000.0 2.42497e-03
+SPECTR 100000.0 2.38016e-03
+SPECTR 110000.0 2.33534e-03
+SPECTR 120000.0 2.29059e-03
+SPECTR 130000.0 2.24597e-03
+SPECTR 140000.0 2.20155e-03
+SPECTR 150000.0 2.15737e-03
+SPECTR 160000.0 2.11349e-03
+SPECTR 170000.0 2.06995e-03
+SPECTR 180000.0 2.02677e-03
+SPECTR 190000.0 1.98399e-03
+SPECTR 200000.0 1.94162e-03
+SPECTR 210000.0 1.89968e-03
+SPECTR 220000.0 1.85819e-03
+SPECTR 230000.0 1.81715e-03
+SPECTR 240000.0 1.77655e-03
+SPECTR 250000.0 1.73639e-03
+SPECTR 260000.0 1.69666e-03
+SPECTR 270000.0 1.65736e-03
+SPECTR 280000.0 1.61845e-03
+SPECTR 290000.0 1.57993e-03
+SPECTR 300000.0 1.54176e-03
+SPECTR 310000.0 1.50391e-03
+SPECTR 320000.0 1.46637e-03
+SPECTR 330000.0 1.42908e-03
+SPECTR 340000.0 1.39202e-03
+SPECTR 350000.0 1.35516e-03
+SPECTR 360000.0 1.31845e-03
+SPECTR 370000.0 1.28185e-03
+SPECTR 380000.0 1.24533e-03
+SPECTR 390000.0 1.20885e-03
+SPECTR 400000.0 1.17237e-03
+SPECTR 410000.0 1.13586e-03
+SPECTR 420000.0 1.09928e-03
+SPECTR 430000.0 1.06259e-03
+SPECTR 440000.0 1.02577e-03
+SPECTR 450000.0 9.88801e-04
+SPECTR 460000.0 9.51650e-04
+SPECTR 470000.0 9.14303e-04
+SPECTR 480000.0 8.76750e-04
+SPECTR 490000.0 8.38983e-04
+SPECTR 500000.0 8.01005e-04
+SPECTR 510000.0 7.62823e-04
+SPECTR 520000.0 7.24452e-04
+SPECTR 530000.0 6.85918e-04
+SPECTR 540000.0 6.47254e-04
+SPECTR 550000.0 6.08505e-04
+SPECTR 560000.0 5.69724e-04
+SPECTR 570000.0 5.30979e-04
+SPECTR 580000.0 4.92347e-04
+SPECTR 590000.0 4.53919e-04
+SPECTR 600000.0 4.15802e-04
+SPECTR 610000.0 3.78115e-04
+SPECTR 620000.0 3.40993e-04
+SPECTR 630000.0 3.04588e-04
+SPECTR 640000.0 2.69068e-04
+SPECTR 650000.0 2.34620e-04
+SPECTR 660000.0 2.01449e-04
+SPECTR 670000.0 1.69781e-04
+SPECTR 680000.0 1.39860e-04
+SPECTR 690000.0 1.11953e-04
+SPECTR 700000.0 8.63508e-05
+SPECTR 710000.0 6.33645e-05
+SPECTR 720000.0 4.33310e-05
+SPECTR 730000.0 2.66120e-05
+SPECTR 740000.0 1.35954e-05
+SPECTR 750000.0 4.69593e-06
+SPECTR 760000.0 3.56400e-07
+SPECTR 763720.0 0.00000e+00
+SPOSIT 0.0 0.0 -0.1                     [Coordinates of the source center]
+SCONE  0.0 0.0 180                        [Conical beam; angles in deg]
+        .
+        >>>>>>>> Material data and simulation parameters.
+MFNAME Cellulose.mat                           [Material file, up to 20 chars]
+MSIMPA 500.0 500.0 500.0 0.05 0.05 500.0 500.0      [EABS(1:3),C1,C2,WCC,WCR]
+        .
+        >>>>>>>> Local maximum step lengths and absorption energies.
+DSMAX  1 1 1.0E-3                              [Maximum step length in body KL,KC]
+        .
+        >>>>>>>> Counter array dimensions and pdf ranges.
+NBE    0.0 800000.0 100                        [Energy window and no. of bins]
+NBANGL 45 18                                [No. of bins for the angles THETA and PHI]
+        .
+        >>>>>>>> Job properties.
+NSIMSH 1.0E7                            [Desired number of simulated showers]
+TIME   3600.0                               [Allotted simulation time, in sec]
