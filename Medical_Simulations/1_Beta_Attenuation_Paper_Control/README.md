@@ -1,6 +1,6 @@
 # Beta Attenuation for Industrial Paper Grammage Control
 
-This folder contains the Monte Carlo simulations (PENELOPE) and data analysis scripts used to evaluate beta radiation ($^{85}$Kr, $^{90}$Sr, $^{204}$Tl) for industrial paper thickness control.
+This folder contains the Monte Carlo simulations (PENELOPE) and data analysis scripts used to evaluate beta radiation ($^{85}Kr, ^{90}Sr, ^{204}$Tl) for industrial paper thickness control.
 
 ## 📄 Full Report
 For the complete theoretical background, physics discussion, and industrial engineering conclusions, please read the provided PDF: **`Aplicaciones_Médicas_e_Industriales_de_las_radiaciones_paper.pdf`**.
