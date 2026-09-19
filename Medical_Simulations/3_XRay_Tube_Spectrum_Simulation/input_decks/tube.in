@@ -1,0 +1,69 @@
+TITLE  Simple x-ray generator, detector and filter.
+       .
+       >>>>>>>> Source definition.
+SKPAR  1        [Primary particles: 1=electron, 2=photon, 3=positron]
+SENERG 1.5e5            [Initial energy (monoenergetic sources only)]
+SPOSIT -5. 0 0                            [Coordinates of the source]
+SCONE  90 0 0                           [Conical beam; angles in deg]
+       .
+       >>>>>>>> Material data and simulation parameters.
+MFNAME W.mat                          [Material file, up to 20 chars]
+MSIMPA 5e3 5e3 5e3 0.05 0.05 2e3 2e3        [EABS(1:3),C1,C2,WCC,WCR]
+MFNAME Al.mat                         [Material file, up to 20 chars]
+MSIMPA 5e3 5e3 5e3 0.05 0.05 2e3 2e3        [EABS(1:3),C1,C2,WCC,WCR]
+MFNAME Si.mat                         [Material file, up to 20 chars]
+MSIMPA 5e3 5e3 5e3 0.05 0.05 2e3 2e3        [EABS(1:3),C1,C2,WCC,WCR]
+       .
+       >>>>>>>> Geometry and local simulation parameters.
+GEOMFN tube.geo                       [Geometry file, up to 20 chars]
+DSMAX  1 2e-2                    [KB, maximum step length in body KB]
+EABSB  1 1e4 1e4 1e4      [KB, local absorption energies, EABSB(1:3)]
+EABSB  2 1e4 1e4 1e4      [KB, local absorption energies, EABSB(1:3)]
+EABSB  3 1e4 1e4 1e4      [KB, local absorption energies, EABSB(1:3)]
+       .
+       >>>>>>>> Interaction forcing.
+IFORCE 1 1 4  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+IFORCE 1 1 5  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+IFORCE 2 1 4  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+IFORCE 2 1 5  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+IFORCE 3 1 4  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+IFORCE 3 1 5  400    0.1 2.0          [KB,KPAR,ICOL,FORCER,WLOW,WHIG]
+       .
+       >>>>>>>> Bremsstrahlung splitting.
+IBRSPL 1 4                                      [KB,splitting factor]
+IBRSPL 2 4                                      [KB,splitting factor]
+IBRSPL 3 4                                      [KB,splitting factor]
+       .
+       >>>>>>>> X-ray splitting.
+IXRSPL 1 4                                      [KB,splitting factor]
+IXRSPL 2 4                                      [KB,splitting factor]
+IXRSPL 3 4                                      [KB,splitting factor]
+       .
+       >>>>>>>> Emerging particles. Energy and angular distributions.
+NBE    0 1.6e5 160                    [Energy window and no. of bins]
+NBANGL 90 45               [No. of bins for the angles THETA and PHI]
+       .
+       >>>>>>>> Impact detectors (up to 5 different detectors).
+       IPSF=0; no psf is created.
+       IPSF=1; a psf is created (for only one detector).
+       IDCUT=0; tracking is discontinued at the detector entrance.
+       IDCUT=1; the detector does not affect the tracking.
+       IDCUT=2; the detector does not affect tracking, the energy
+                distribution of particle fluence (integrated over the
+                volume of the detector) is calculated.
+IMPDET 0. 1.6e5 160 0 2          [E-window, no. of bins, IPSF, IDCUT]
+IDAGEL 1e-11 1e-8 -500                 [Age interval and no. of bins]
+IDBODY 2                                                [Active body]
+       .
+       >>>>>>>> Impact detectors (up to 5 different detectors).
+IMPDET 0. 1.6e5 160 0 0          [E-window, no. of bins, IPSF, IDCUT]
+IDAGEL 1e-11 1e-8 -500                 [Age interval and no. of bins]
+IDBODY 3                                                [Active body]
+       .
+       >>>>>>>> Job properties.
+RESUME dump.dmp                [Resume from this dump file, 20 chars]
+DUMPTO dump.dmp                   [Generate this dump file, 20 chars]
+DUMPP  60                                    [Dumping period, in sec]
+       .
+NSIMSH 2e9                      [Desired number of simulated showers]
+TIME   2e9                         [Allotted simulation time, in sec]
