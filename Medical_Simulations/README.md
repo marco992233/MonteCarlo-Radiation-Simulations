@@ -1,4 +1,4 @@
-# Mammography Dosimetry and PET Simulations
+# Mammography Dosimetry 
 
 This folder contains Monte Carlo simulations (PENELOPE/penmain) developed to evaluate X-ray spectra and dosimetric parameters in mammography, alongside preliminary simulations for Positron Emission Tomography (PET).
 
