@@ -1,30 +1,63 @@
-# Monte Carlo Radiation Transport Simulations ⚛️
+# Monte Carlo Radiation Transport Simulations
 
-This repository showcases computational physics projects and radiation transport simulations developed during my academic background at the **University of Granada**. 
+Five computational physics studies developed at the **University of Granada**, applying Monte
+Carlo radiation transport to nuclear engineering, medical physics and industrial quality
+control. Simulations run with **MCNP6.2** and **PENELOPE-2018**; analysis in Python.
 
-The projects focus on applying the **Monte Carlo method** to solve complex radiation transport problems in both nuclear and medical physics domains, utilizing industry-standard simulation codes such as **MCNP** and **PENELOPE**.
+Each folder has its own README with the setup, the results and the full report.
 
----
+## [Nuclear — MCNP simulation of a PWR fuel assembly](Nuclear_Simulations/)
 
-## 📂 Repository Structure
+Criticality study of an idealised 3×3 UO₂ lattice with reflective boundary conditions,
+benchmarked against the Westinghouse 17×17 commercial design. Parametric studies of lattice
+pitch, moderator density and fuel enrichment, plus the neutron spectrum behind the moderation
+curve.
+
+> k∞ = 1.41856 ± 0.00031 at the reference PWR configuration · predicted optimal pitch
+> p\* = 1.33 cm, within ~5% of the commercial design · Δk∞/k∞ = −2.1% at PWR-hot moderator
+> density, reproducing the reactor's self-stabilising feedback
+
+## [Medical and industrial — four PENELOPE studies](Medical_Simulations/)
+
+**[1 — Beta attenuation for paper grammage control](Medical_Simulations/1_Beta_Attenuation_Paper_Control/)**
+Beta transmission through cellulose for on-line thickness sensors, with gamma and lead
+counter-tests marking the limits of the technique.
+> µ/ρ from 25.0 to 40.5 cm²/g across ⁸⁵Kr, ²⁰⁴Tl and ⁹⁰Sr · gamma transmission flat at 0.53
+
+**[2 — PIXE material characterization](Medical_Simulations/2_PIXE_Material_Characterization/)**
+Proton-induced X-ray emission on pure elements and industrial alloys, validated against EADL
+transition energies.
+> Mn resolved at 0.43% mass fraction in Eurofer97 · Ag/Pd Kα ratio 3.4 against a nominal 3.4
+
+**[3 — X-ray tube spectrum simulation](Medical_Simulations/3_XRay_Tube_Spectrum_Simulation/)**
+Six tube configurations varying beam energy, anode material and geometry, cross-validated
+against the SpekPy v2 toolkit.
+> Mo K-lines at 17.5 and 19.6 keV appear at 28 keV where the W lines cannot
+
+**[4 — Mammographic dosimetry and PET](Medical_Simulations/4_Mammography_and_PET_Simulations/)**
+Dose in a breast phantom across three clinical spectra and three tissue compositions, carried
+through to an absolute dose.
+> 2.43 mGy average breast dose at 100 mAs · breast-to-skin ratio improves from 3.58 to 4.43 as
+> the beam hardens
+
+## Repository structure
 
 ```text
 MonteCarlo-Radiation-Simulations/
-│
-├── Medical_Simulations/     # Simulations related to medical physics, dosimetry, and tissue interactions
-└── Nuclear_Simulations/     # Simulations related to nuclear engineering, neutron transport, and shielding
-🏥 1. Medical Physics Simulations
-📁 Folder: Medical_Simulations
-Tools Used: PENELOPE
-Overview: Focused on the interaction of ionizing radiation with matter in medical contexts. These simulations typically involve tracking photons, electrons, and positrons to evaluate absorbed dose distributions, particle tracking, and behavioral analysis in complex geometries or phantom materials.
-Key Competencies: Radiation-matter interaction physics, cross-section data management, and spatial dose profiling.
+├── Nuclear_Simulations/    # MCNP6 — neutron transport, criticality, lattice physics
+└── Medical_Simulations/    # PENELOPE — photon, electron and positron transport
+```
 
-☢️ 2. Nuclear Physics
-📁 Folder: Nuclear_Simulations
-Tools Used: MCNP (Monte Carlo N-Particle)
-Overview: Focused on neutron and photon transport for nuclear applications. This includes modeling criticality benchmarks, neutron fluxes, and radiation shielding performance across diverse material compositions.
-Key Competencies: Geometry setup (cells, surfaces, universes), material definitions, source specification, and variance reduction techniques.
+## Methods
 
-## 🛠️ Methodology & Tools
-* **Software Codes:** MCNP, PENELOPE.
-* **Data Processing:** Python / MATLAB (used for parsing output files, tally data extraction, and plotting energy spectra or spatial distributions).
+| | |
+|---|---|
+| **Nuclear** | MCNP6.2 with ENDF/B-VII.1, `kcode` criticality calculations, F4 flux tallies, reflective boundary conditions |
+| **Medical** | PENELOPE-2018 (`penmain`, `penh`), 3D dose grids, impact detectors, spectra from SpekPy v2 and the LNHB database |
+| **Analysis** | Python — output parsing, tally extraction, fitting and plotting |
+
+Every study includes its full written report as a PDF in the corresponding folder.
+
+---
+
+*Universidad de Granada, academic year 2025/2026.*
