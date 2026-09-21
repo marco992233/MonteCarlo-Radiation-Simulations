@@ -1,0 +1,5 @@
+# The two notebooks in this repository are analysis write-ups with large
+# embedded output images. By size they dominate the language statistics
+# without reflecting what the repository actually contains, which is mostly
+# MCNP and PENELOPE input decks plus Python analysis scripts.
+*.ipynb linguist-documentation
