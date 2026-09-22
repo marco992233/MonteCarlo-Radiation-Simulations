@@ -1,0 +1,65 @@
+TITLE  Simulacion Co60 dist d1cm - Detector Canberra 802-3x3 (fuente volumetrica)
+       .
+       >>>>>>>> Source definition.
+SKPAR  2                              [Primary particles: 2=ph]
+SPECTR 1173.22e3 0.49967              [Co-60: 1173.23 keV, Ig=99.85%]
+SPECTR 1173.24e3 0.0                  [Hueco entre lineas]
+SPECTR 1332.47e3 0.50033              [Co-60: 1332.48 keV, Ig=99.98%]
+SPECTR 1332.49e3 -1                   [Cierre espectro]
+SPOSIT 0.0 0.0 -1.160000              [Centro fuente activa (dentro del disco)]
+SBOX   0.1500 0.1500 0.0240           [Caja muestreo - confinada a BODY 1]
+SBODY  1                              [Confinar emision a fuente activa]
+SCONE  0 0 180                        [Emision isotropa]
+       .
+       >>>>>>>> Material data and simulation parameters.
+MFNAME cobalto.mat                    [Material 1: Fuente activa Co60]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+MFNAME platico.mat                    [Material 2: Plastico (soporte disco)]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+MFNAME nai.mat                        [Material 3: Cristal NaI(Tl)]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+MFNAME aluminio.mat                   [Material 4: Aluminio]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+MFNAME plomo.mat                      [Material 5: Plomo]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+MFNAME air.mat                        [Material 6: Aire]
+MSIMPA 1e4 1e3 1e4 0.10 0.10 1e4 1e3
+MSIMPH 1e4 1e4 1e4 0.05 0.05 1e4
+MSIMPN 1.0 50
+       .
+       >>>>>>>> Geometry and local simulation parameters.
+GEOMFN detector.geo                   [Geometry file]
+DSMAX  1 0.002                        [Step limit en fuente activa (muy fina)]
+DSMAX  2 0.05                         [Step limit en plastico]
+DSMAX  5 0.1                          [Step limit en cristal]
+       .
+       >>>>>>>> Emerging particles. Energy and angular distributions.
+NBE    0 1.4e6 1000                   [Energy window hasta 1400 keV y 1000 bins]
+NBANGL 180 1                          [Angular bins]
+       .
+       >>>>>>>> Energy deposition detectors.
+ENDETC 0 1.4e6 1000                   [Energy window hasta 1400 keV para NaI]
+EDSPC  spc-NaI-enddet.dat             [Output spectrum file name]
+EDBODY 5                              [Active body: NaI Crystal (ahora body 5)]
+       .
+       >>>>>>>> Job properties.
+RESUME dump.dmp                       [Resume from this dump file]
+DUMPTO dump.dmp                       [Generate this dump file]
+DUMPP  60                             [Dumping period, in sec]
+NSIMSH 1.0e8                          [Number of showers]
+TIME   1.0e9                          [Time limit in seconds]

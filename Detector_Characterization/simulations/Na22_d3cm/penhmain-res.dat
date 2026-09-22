@@ -1,0 +1,120 @@
+
+
+   ************************************
+   **   Program PENHMAIN. Results.   **
+   ************************************
+
+   Date and time: 15th Apr 2026. 12:01:35
+
+   Simulacion Na22 dist d3cm - Detector Canberra 802-3x3 (fuente vol
+
+   Primary particles: photons
+   Simulated primary particles .............  1.000000E+06
+
+   Calculation time ........................  1.359173E+03 sec
+   Effective (CPU) simulation time .........  1.332516E+03 sec
+   Simulation speed ........................  7.504602E+02 showers/sec
+
+   Upbound primary particles ...............  1.847760E+05
+   Downbound primary particles .............  5.153570E+05
+   Absorbed primary particles ..............  2.998670E+05
+
+   Upbound fraction ...................  1.850710E-01 +- 1.2E-03
+   Downbound fraction .................  5.193900E-01 +- 1.7E-03
+   Absorption fraction ................  2.998670E-01 +- 1.4E-03
+
+   Secondary-particle generation probabilities:
+                   ----------------------------------------------
+                   |  electrons   |   photons    |  positrons   |
+   --------------------------------------------------------------
+   |   upbound     | 1.267000E-03 | 2.950000E-04 | 0.000000E+00 |
+   |               |  +- 1.1E-04  |  +- 5.2E-05  |  +- 0.0E+00  |
+   --------------------------------------------------------------
+   |   downbound   | 2.975000E-03 | 4.033000E-03 | 0.000000E+00 |
+   |               |  +- 1.6E-04  |  +- 1.9E-04  |  +- 0.0E+00  |
+   --------------------------------------------------------------
+   |   absorbed    | 2.490863E+00 | 9.859890E-01 | 7.430000E-04 |
+   |               |  +- 1.2E-02  |  +- 5.7E-03  |  +- 8.2E-05  |
+   --------------------------------------------------------------
+
+                   ----------------------------------------------
+                   |   protons    |    alphas    |   neutrons   |
+   --------------------------------------------------------------
+   |   upbound     | 0.000000E+00 | 0.000000E+00 | 0.000000E+00 |
+   |               |  +- 0.0E+00  |  +- 0.0E+00  |  +- 0.0E+00  |
+   --------------------------------------------------------------
+   |   downbound   | 0.000000E+00 | 0.000000E+00 | 0.000000E+00 |
+   |               |  +- 0.0E+00  |  +- 0.0E+00  |  +- 0.0E+00  |
+   --------------------------------------------------------------
+   |   absorbed    | 0.000000E+00 | 0.000000E+00 | 0.000000E+00 |
+   |               |  +- 0.0E+00  |  +- 0.0E+00  |  +- 0.0E+00  |
+   --------------------------------------------------------------
+
+   Mean number of events per primary track:
+    ** Upbound primary particles:
+      Coherent (Rayleigh) .............  9.194917E-03 +- 7.2E-04
+      Incoherent (Compton) ............  1.128556E-01 +- 2.6E-03
+      Photoelectric absorption ........  0.000000E+00 +- 0.0E+00
+      Pair production .................  0.000000E+00 +- 0.0E+00
+      Delta interactions ..............  3.837078E-03 +- 4.4E-04
+    ** Downbound primary particles:
+      Coherent (Rayleigh) .............  2.695219E-03 +- 2.3E-04
+      Incoherent (Compton) ............  9.478672E-02 +- 1.4E-03
+      Photoelectric absorption ........  0.000000E+00 +- 0.0E+00
+      Pair production .................  0.000000E+00 +- 0.0E+00
+      Delta interactions ..............  1.005128E-03 +- 1.4E-04
+    ** Absorbed primary particles:
+      Coherent (Rayleigh) .............  1.128700E-01 +- 1.9E-03
+      Incoherent (Compton) ............  1.095436E+00 +- 5.8E-03
+      Photoelectric absorption ........  9.974455E-01 +- 2.8E-04
+      Pair production .................  2.554466E-03 +- 2.8E-04
+      Delta interactions ..............  5.025561E-02 +- 1.3E-03
+
+   Average track length in material bodies:
+      Upbound primary particles .......  1.011551E+02 +- 4.3E-02 cm
+      Downbound primary particles .....  9.870061E+01 +- 1.3E-02 cm
+      Absorbed primary particles ......  7.741918E+00 +- 1.3E-02 cm
+
+   Average final energy:
+      Upbound primary particles .......  7.937310E+05 +- 2.6E+03 eV
+      Downbound primary particles .....  7.560542E+05 +- 1.6E+03 eV
+
+   Mean value of the polar cosine of the exit direction:
+      Upbound primary particles .......  2.138636E-01 +- 1.2E-03
+      Downbound primary particles ..... -5.094060E-01 +- 1.2E-03
+
+   Mean value of the polar angle of the exit direction:
+      Upbound primary particles .......  7.707789E+01 +- 8.6E-02 deg
+      Downbound primary particles .....  1.233501E+02 +- 9.0E-02 deg
+
+   Average deposited energies (bodies):
+      Body    1 ......  1.777208E+02 +- 1.4E+01 eV    (effic. = 1.15E+00)
+      Body    2 ......  9.294446E+02 +- 4.6E+01 eV    (effic. = 2.81E+00)
+      Body    3 ......  9.236250E+02 +- 4.5E+01 eV    (effic. = 2.82E+00)
+      Body    4 ......  8.887686E+03 +- 1.9E+02 eV    (effic. = 1.48E+01)
+      Body    5 ......  4.986805E+04 +- 5.5E+02 eV    (effic. = 5.54E+01)
+      Body    6 ......  1.067909E+03 +- 6.1E+01 eV    (effic. = 2.09E+00)
+      Body    7 ......  2.787067E+03 +- 1.1E+02 eV    (effic. = 4.06E+00)
+      Body    8 ......  1.800911E+05 +- 1.1E+03 eV    (effic. = 1.88E+02)
+      Body    9 ......  2.101906E+03 +- 6.8E+01 eV    (effic. = 6.43E+00)
+
+   Average deposited charges (bodies, e = elementary charge):
+      Body    1 ......  1.217000E-03 +- 1.2E-04 e     (effic. = 6.41E-01)
+      Body    2 ......  1.205000E-03 +- 1.5E-04 e     (effic. = 4.56E-01)
+      Body    3 ......  1.249000E-03 +- 1.5E-04 e     (effic. = 4.93E-01)
+      Body    4 ......  2.164000E-03 +- 2.5E-04 e     (effic. = 5.04E-01)
+      Body    5 ......  4.400000E-05 +- 1.0E-04 e     (effic. = 1.22E-03)
+      Body    6 ...... -9.120000E-04 +- 1.3E-04 e     (effic. = 3.27E-01)
+      Body    7 ...... -5.330000E-04 +- 1.0E-04 e     (effic. = 1.88E-01)
+      Body    8 ......  8.510000E-04 +- 1.3E-04 e     (effic. = 2.74E-01)
+      Body    9 ...... -1.043000E-03 +- 2.3E-04 e     (effic. = 1.35E-01)
+
+   Average deposited energies (energy detectors):
+      Detector # 1 ...  4.986805E+04 +- 5.5E+02 eV    (effic. = 5.54E+01)
+
+   Spectral areas (energy-deposition detectors):
+      Detector # 1 ...  1.000200E-01 +- 1.9E-02
+
+   Last random seeds =  220657493 ,  792986740
+
+   ---------------------------------------------------------------------------

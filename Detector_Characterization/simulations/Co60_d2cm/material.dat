@@ -1,0 +1,145 @@
+
+ **********************************
+ **   PENELOPE  (version 2018)   **
+ **********************************
+
+ EMIN = 1.0000E+03 eV,  EMAX = 1.3325E+06 eV
+
+
+ **********************
+ **   1st material   **
+ **********************
+
+ Material data file: cobalto.mat         
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: COBALT  (27)                                                  
+ Mass density = 8.90000000E+00 g/cm**3
+ Number of elements in the molecule =  1
+    Element: Co (Z=27), atoms/molecule = 1.00000000E+00
+ Mean excitation energy = 2.97000000E+02 eV
+ PENELOPE (v. 2018)  End of material data file ........
+
+
+ **********************
+ **   2nd material   **
+ **********************
+
+ Material data file: platico.mat         
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: POLYMETHYL METHACRALATE (LUCITE, PERSPEX, PLEXIGLASS)  (224)  
+ Mass density = 1.19000000E+00 g/cm**3
+ Number of elements in the molecule =  3
+    Element: H  (Z= 1), atoms/molecule = 8.00000000E+00
+    Element: C  (Z= 6), atoms/molecule = 5.00000000E+00
+    Element: O  (Z= 8), atoms/molecule = 2.00000000E+00
+ Mean excitation energy = 7.40000000E+01 eV
+ PENELOPE (v. 2018)  End of material data file ........
+
+
+ **********************
+ **   3rd material   **
+ **********************
+
+ Material data file: nai.mat             
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: NaITl.mat                                                     
+ Mass density = 3.67000000E+00 g/cm**3
+ Number of elements in the molecule =  3
+    Element: Na (Z=11), atoms/molecule = 1.00000000E+00
+    Element: I  (Z=53), atoms/molecule = 9.99786961E-01
+    Element: Tl (Z=81), atoms/molecule = 1.46945192E-03
+ Mean excitation energy = 4.00517486E+02 eV
+ PENELOPE (v. 2018)  End of material data file ........
+
+
+ **********************
+ **   4th material   **
+ **********************
+
+ Material data file: aluminio.mat        
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: ALUMINIUM  (13)                                               
+ Mass density = 2.69890000E+00 g/cm**3
+ Number of elements in the molecule =  1
+    Element: Al (Z=13), atoms/molecule = 1.00000000E+00
+ Mean excitation energy = 1.66000000E+02 eV
+ PENELOPE (v. 2018)  End of material data file ........
+
+
+ **********************
+ **   5th material   **
+ **********************
+
+ Material data file: plomo.mat           
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: LEAD  (82)                                                    
+ Mass density = 1.13500000E+01 g/cm**3
+ Number of elements in the molecule =  1
+    Element: Pb (Z=82), atoms/molecule = 1.00000000E+00
+ Mean excitation energy = 8.23000000E+02 eV
+ PENELOPE (v. 2018)  End of material data file ........
+
+
+ **********************
+ **   6th material   **
+ **********************
+
+ Material data file: air.mat             
+
+ *** Simulation parameters:
+     Electron absorption energy = 1.0000E+04 eV
+       Photon absorption energy = 1.0000E+03 eV
+     Positron absorption energy = 1.0000E+04 eV
+      C1 = 1.0000E-01,       C2 = 1.0000E-01
+     WCC = 1.0000E+04 eV,   WCR = 1.0000E+03 eV
+
+ PENELOPE (v. 2018)  Material data file ...............
+ Material: AIR, DRY (NEAR SEA LEVEL)  (104)                              
+ Mass density = 1.20479000E-03 g/cm**3
+ Number of elements in the molecule =  4
+    Element: C  (Z= 6), atoms/molecule = 1.50187000E-04
+    Element: N  (Z= 7), atoms/molecule = 7.84430000E-01
+    Element: O  (Z= 8), atoms/molecule = 2.10748000E-01
+    Element: Ar (Z=18), atoms/molecule = 4.67111000E-03
+ Mean excitation energy = 8.57000000E+01 eV
+ PENELOPE (v. 2018)  End of material data file ........

@@ -1,0 +1,30 @@
+EFICIENCIAS Cs-137 @ 661.66 keV - MCNP6
+Detector NaI(Tl) 3"x3", d = 1.0 cm
+==============================================================================
+
+NPS realista = 1.000e+07    (con GEB)
+NPS ideal    = 1.000e+08    (sin GEB)
+Omega/4pi analitico (d_ef = 1.21 cm) = 0.3486563
+
+                                 fraccion        porcentaje
+------------------------------------------------------------------------------
+  eps_abs_total (IDEAL)         0.353010       35.3010 %
+  eps_abs_total (REALISTA)      0.280275       28.0275 %
+  eps_abs_foto  (IDEAL, win +/-5 keV)     0.103679       10.3679 %
+  eps_abs_foto  (REALISTA, F18 ref, +/-5 keV)0.102715       10.2714 %
+  eps_abs_foto  (GEB, win +/- 2 FWHM)     0.104417       10.4417 %
+  eps_int_total (IDEAL)         1.012487      101.2487 %
+  eps_int_foto  (IDEAL)         0.297369       29.7369 %
+  eps_int_foto  (GEB)           0.299483       29.9483 %
+------------------------------------------------------------------------------
+
+Comparacion con PENELOPE (Cs-137, d=1 cm, eficiencias.txt):
+  eps_abs_foto (PENELOPE)     = 0.104621
+  eps_abs_total(PENELOPE)     = 0.207611
+  eps_int_foto (PENELOPE)     = 0.300069
+
+Definiciones:
+  eps_abs  = cuentas por foton emitido
+  eps_int  = eps_abs / (Omega/4pi)
+  Ventana GEB = +/- 2 FWHM con FWHM(MeV)=0.0565*sqrt(E)
+  Ventana IDEAL = +/- 5 keV (pico delta)
